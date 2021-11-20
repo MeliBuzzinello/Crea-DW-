@@ -203,6 +203,7 @@ ul li {
     color: #EEEDE7;
     font-size: 20px;
     font-weight: 500;
+    text-decoration: underline
 }
 
 .tabla_cuerpo {
@@ -616,4 +617,162 @@ footer {
     }
 
     
+}
+
+/* -----------GRID SERVICIOS ---------*/ 
+
+@media only screen and (min-width: 0px) and (max-width: 768px)  {
+    .GridContPadreServicios {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "main"
+        "div"
+        "footer"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 150px auto auto 80px 50px;
+    }
+
+    
+    header {
+        grid-area: logo;
+    }
+    
+    nav {
+        grid-area: nav;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     
+    main {
+        grid-area: main;
+    }
+    
+    .index__cuadro {
+        grid-area: div;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+    
+    .logo__ubicacion {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 140px;
+        width: 140px;
+    }
+
+    ul li {
+        font-size: 30px;
+    }
+
+    .nosotros__flex--mobile {
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .GridContPadreServicios {
+        display: grid;
+        grid-template-areas: 
+        "logo nav nav nav"
+        "main main main main"
+        "div div div div"
+        "footer footer footer footer";
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: auto auto auto;
+    }
+    
+    header {
+        grid-area: logo;
+    }
+    
+    nav {
+        grid-area: nav;
+    }
+     
+    main {
+        grid-area: main;
+    }
+    
+    .index__cuadro {
+        grid-area: div;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1024px){
+    .GridContPadreServicios {
+        display: grid;
+        grid-template-areas: 
+        "logo nav nav nav"
+        "main main main main"
+        "div div div div"
+        "footer footer footer footer";
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: auto auto auto;
+    }
+    
+    header {
+        grid-area: logo;
+    }
+    
+    nav {
+        grid-area: nav;
+    }
+     
+    main {
+        grid-area: main;
+    }
+    
+    .index__cuadro {
+        grid-area: div;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+
+    .div__nosotros--grid {
+        display: grid;
+        grid-template-areas: 
+        "div div div div";
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 100%;
+        
+    }
+
+    .div__nosotros--grid {
+        grid-area: div;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .div__nosotros--grid p {
+        margin: 16px 16px;
+    }
+
 }
