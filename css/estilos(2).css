@@ -126,14 +126,8 @@ ul li {
     border-style: double;
     border-radius: 5px;
     padding: 14px;
+    margin-left: 400px;
     background-color: rgba(252, 250, 250, 0.89);
-    margin-top: 50px;
-    align-self: center;
-}
-
-.contenedor__flex {
-    display: flex;
-    flex-direction: column;
 }
 
 .form-titulo {
@@ -166,9 +160,6 @@ ul li {
    background-color: #626161; 
    color: #EEEDE7;
    margin: 0;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
 }
 
 .main-subtitulo {
@@ -184,11 +175,9 @@ ul li {
 .mapa {
     width: 800px;
     height: 300px;
-    padding: 20px;   
-}
-
-.contacto__info {
-    color: #EEEDE7;
+    padding: 20px;
+    margin-left: 300px;
+    
 }
 
 /* ----------- MAIN SERVICIOS ----------*/
@@ -214,7 +203,6 @@ ul li {
     color: #EEEDE7;
     font-size: 20px;
     font-weight: 500;
-    text-decoration: underline
 }
 
 .tabla_cuerpo {
@@ -315,7 +303,7 @@ footer {
         "footer"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 125px 125px auto auto 100px 50px;
+        grid-template-rows: 150px 150px auto auto 100px 50px;
     }
     
     header {
@@ -356,7 +344,6 @@ footer {
     .logo {
         width: 100px;
         height: 100px;
-        margin-top: 35px;
     }
 
     ul {
@@ -485,7 +472,7 @@ footer {
         "footer"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 125px 125px auto auto 80px 50px;
+        grid-template-rows: 150px 150px auto auto 80px 50px;
     }
 
     
@@ -504,10 +491,10 @@ footer {
         grid-area: main;
     }
     
-    .div__nosotros--grid {
+    .index__cuadro {
         grid-area: div;
     }
-
+    
     footer {
         grid-area: footer;
     }
@@ -519,7 +506,6 @@ footer {
     .logo__ubicacion {
         display: flex;
         justify-content: center;
-        padding: 0%;
     }
 
     ul {
@@ -528,16 +514,18 @@ footer {
     }
 
     .logo {
-        height: 100px;
-        width: 100px;
-        margin-top: 35px;
+        height: 140px;
+        width: 140px;
     }
 
     ul li {
         font-size: 30px;
     }
 
-  
+    .nosotros__flex--mobile {
+        display: flex;
+
+    }
 
 }
 
@@ -600,7 +588,7 @@ footer {
         grid-area: main;
     }
     
-    .div__nosotros--grid {
+    .index__cuadro {
         grid-area: div;
     }
     
@@ -628,407 +616,4 @@ footer {
     }
 
     
-}
-
-/* -----------GRID SERVICIOS ---------*/ 
-
-@media only screen and (min-width: 0px) and (max-width: 768px)  {
-    .GridContPadreServicios {
-        display: grid;
-        grid-template-areas: 
-        "logo"
-        "nav"
-        "main"
-        "footer"
-        "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 125px 125px auto 80px 50px;
-    }
-
-    
-    header {
-        grid-area: logo;
-    }
-    
-    nav {
-        grid-area: nav;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-     
-    main {
-        grid-area: main;
-    }
-    
-    footer {
-        grid-area: footer;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-    
-    .logo__ubicacion {
-        display: flex;
-        justify-content: center;
-        padding: 0%;
-    }
-
-    ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    .logo {
-        height: 100px;
-        width: 100px;
-        margin-top: 35px;
-    }
-
-    ul li {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
-    .GridContPadreServicios {
-        display: grid;
-        grid-template-areas: 
-        "logo nav nav nav"
-        "main main main main"
-        "footer footer footer footer";
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: auto auto auto;
-    }
-    
-    header {
-        grid-area: logo;
-    }
-    
-    nav {
-        grid-area: nav;
-    }
-     
-    main {
-        grid-area: main;
-    }
-    
-      footer {
-        grid-area: footer;
-    }
-    
-
-}
-
-@media only screen and (min-width: 1024px){
-    .GridContPadreServicios {
-        display: grid;
-        grid-template-areas: 
-        "logo nav nav nav"
-        "main main main main"
-        "footer footer footer footer";
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: auto auto auto;
-    }
-    
-    header {
-        grid-area: logo;
-    }
-    
-    nav {
-        grid-area: nav;
-    }
-     
-    main {
-        grid-area: main;
-    }
-    
-      
-    footer {
-        grid-area: footer;
-    }
-
-}
-
-/* ----------------- GRID FAQ -------------*/ 
-
-@media only screen and (min-width: 0px) and (max-width: 768px)  {
-    .GridContPadreFaq {
-        display: grid;
-        grid-template-areas: 
-        "logo"
-        "nav"
-        "main"
-        "footer"
-        "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 125px 125px auto 100px 50px;
-    }
-    
-    header {
-        grid-area: logo;
-    }
-    
-    nav {
-        grid-area: nav;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-     
-    main {
-        grid-area: main;
-    }
-    
-    footer {
-        grid-area: footer;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-    
-    .logo__ubicacion {
-        display: flex;
-        justify-content: center;
-        padding: 0%;
-    }
-
-    .logo {
-        width: 100px;
-        height: 100px;
-        margin-top: 35px;
-    }
-
-    ul {
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-    }
-
-    ul li {
-        font-size: 30px;
-    }
-
-    .img_faq {
-        display: none;
-    }
-
-   
-
-  }
-
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
-    .GridContPadreFaq {
-        display: grid;
-        grid-template-areas: 
-        "logo nav nav nav"
-        "main main main main"
-        "footer footer footer footer";
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: auto auto auto;
-    }
-    
-    header {
-        grid-area: logo;
-    }
-    
-    nav {
-        grid-area: nav;
-    }
-     
-    main {
-        grid-area: main;
-    }
-    
-    footer {
-        grid-area: footer;
-    }
-    
-
-}
-
-@media only screen and (min-width: 1024px){
-    .GridContPadreFaq {
-        display: grid;
-        grid-template-areas: 
-        "logo nav nav nav"
-        "main main main main"
-        "footer footer footer footer";
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: auto auto auto;
-    }
-    
-    header {
-        grid-area: logo;
-    }
-    
-    nav {
-        grid-area: nav;
-    }
-     
-    main {
-        grid-area: main;
-    }
-    
-    footer {
-        grid-area: footer;
-    }
-
-    .div__nosotros--grid {
-        display: grid;
-        grid-template-areas: 
-        "div div div div";
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: 100%;
-    }
-
-    .div__nosotros--grid {
-        grid-area: div;
-        padding-bottom: 50px;
-        text-align: center;
-    }
-
-    .div__nosotros--grid p {
-        margin: 16px 16px;
-    }
-
-}
-
-/* ------------- GRID CONTACTOS ---------------*/
-@media only screen and (min-width: 0px) and (max-width: 768px)  {
-    .GridContPadreContacto {
-        display: grid;
-        grid-template-areas: 
-        "logo"
-        "nav"
-        "main"
-        "section"
-        "footer"
-        "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 125px 125px auto auto 80px 50px;
-    }
-
-    
-    header {
-        grid-area: logo;
-    }
-    
-    nav {
-        grid-area: nav;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-     
-    main {
-        grid-area: main;
-    }
-
-    section {
-        grid-area: section;
-    }
-    
-    footer {
-        grid-area: footer;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-    
-    .logo__ubicacion {
-        display: flex;
-        justify-content: center;
-        padding: 0%;
-    }
-
-    ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    .logo {
-        height: 100px;
-        width: 100px;
-        margin-top: 20px;
-    }
-
-    ul li {
-        font-size: 30px;
-    }
-
-    .mapa {
-        width: 80%;
-    }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
-    .GridContPadreContacto {
-        display: grid;
-        grid-template-areas: 
-        "logo nav nav nav"
-        "main main main main"
-        "section section section section"
-        "footer footer footer footer";
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: auto auto auto auto;
-    }
-    
-    header {
-        grid-area: logo;
-    }
-    
-    nav {
-        grid-area: nav;
-    }
-     
-    main {
-        grid-area: main;
-    }
-
-    section {
-        grid-area: section;
-    }
-    
-      footer {
-        grid-area: footer;
-    }
-    
-
-}
-
-@media only screen and (min-width: 1024px){
-    .GridContPadreContacto {
-        display: grid;
-        grid-template-areas: 
-        "logo nav nav nav"
-        "main main main main"
-        "section section section section"
-        "footer footer footer footer";
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: auto auto auto auto;
-    }
-    
-    header {
-        grid-area: logo;
-    }
-    
-    nav {
-        grid-area: nav;
-    }
-     
-    main {
-        grid-area: main;
-    }
-
-    section {
-        grid-area: section;
-    }
-      
-    footer {
-        grid-area: footer;
-    }
 }
