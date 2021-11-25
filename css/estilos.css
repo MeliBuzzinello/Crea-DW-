@@ -1032,3 +1032,40 @@ footer {
         grid-area: footer;
     }
 }
+
+/* ------------------ GRADIENTES ------------*/ 
+.cuerpo-fondo {
+    background-image: linear-gradient(to top, #626161, #EEEDE7 );
+}
+
+/* ----------------- TRANSFORMACION -----------*/ 
+.main-subtitulo {
+    transform: translateX(-260px);
+}
+
+/* ------------------ TRANSICIONES -----------*/ 
+.transicion {
+    padding: 50px 20px;
+    transition: all 2s;
+}
+.transicion:hover {
+    padding: 30px 10px;
+}
+
+/* -------------------- ANIMACION --------------*/
+@keyframes animacion {
+    0%{}
+    25%{transform: rotateY(20px);}
+    50%{transform: skew(10deg);}
+    75%{transform: rotateY(-20px);}
+    100%{}
+}
+
+.main-titulo {
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
